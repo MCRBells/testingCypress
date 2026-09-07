@@ -1,0 +1,16 @@
+describe('Prueba de 1 producto en el carrito', () =>{
+    it('Agregando 1 producto al carrito y verificar total', () => {
+        cy.visit('https://www.saucedemo.com/')
+        cy.get('#user-name').type('standard_user')
+        cy.wait(1000)
+        cy.get('#password').type('secret_sauce')
+        cy.wait(1000)
+        cy.get('#login-button').click()
+        cy.wait(1000)
+        cy.get('#add-to-cart-sauce-labs-backpack').click()
+        cy.wait(1000)
+        cy.get('a[class="shopping_cart_link"]').click()
+        cy.wait(1000)
+        cy.get('span[data-test="shopping-cart-badge"]').should('have.text', '1')
+        })
+})
