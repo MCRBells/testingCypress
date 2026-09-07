@@ -1,0 +1,28 @@
+[
+    {
+        "usuario": "standard_user",
+        "contraseña": "secret_sauce"
+    },
+
+
+    {
+        "usuario": "problem_user",
+        "contraseña": "secret_sauce"
+    },
+
+    {
+        "usuario": "performance_glitch_user",
+        "contraseña": "secret_sauce"
+    },
+
+    {
+        "usuario": "error_user",
+        "contraseña": "secret_sauce"
+    },
+
+    {
+        "usuario": "visual_user",
+        "contraseña": "secret_sauce"
+    }
+
+]
