@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-09-07T17:12:17.288Z",
+    "end": "2026-09-07T17:12:23.526Z",
+    "duration": 6238,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0daffade-ff71-4bfe-b3c7-adc6a3472d8d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\trainingFiles\\ventanas.cy.js",
+      "file": "cypress\\e2e\\trainingFiles\\ventanas.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fc7cb573-d53d-40a4-b2f2-99b3871fc8aa",
+          "title": "abrir ventana nueva",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "abrir ventana nueva passes",
+              "timedOut": null,
+              "duration": 2428,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://es.wikipedia.org/wiki/Wikipedia:Portada');\ncy.window().then(win => {\n  win.open('https://es.wikipedia.org/wiki/Deshielo_cubano');\n});",
+              "err": {},
+              "uuid": "0d2c0acc-f959-4a69-b385-79190fca635e",
+              "parentUUID": "fc7cb573-d53d-40a4-b2f2-99b3871fc8aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d2c0acc-f959-4a69-b385-79190fca635e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2428,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "8.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

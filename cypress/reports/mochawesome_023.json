@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-09-07T17:10:28.166Z",
+    "end": "2026-09-07T17:10:46.620Z",
+    "duration": 18454,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca308c36-fa8f-47fd-b56e-8a62b0583c8e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\trainingFiles\\fixtures.cy.js",
+      "file": "cypress\\e2e\\trainingFiles\\fixtures.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8ca03e5b-9c29-4077-80eb-00d8348c5ea9",
+          "title": "Usando fixtures",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Usando datos json para login",
+              "fullTitle": "Usando fixtures Usando datos json para login",
+              "timedOut": null,
+              "duration": 8093,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('usuarios.json').then(datos => {\n  // Utiliza los datos del fixture para el login\n  const usuario = datos[0]; // Accede al primer objeto del array\n  cy.get('#email').type(usuario.nombre); // Ingresa el nombre de usuario desde el fixture\n  cy.get('#password').type(usuario.password); // Ingresa la contraseña desde el fixture\n  cy.get('button[type=\"submit\"]').click(); // Haz clic en el botón de inicio de sesión\n});",
+              "err": {},
+              "uuid": "1b266072-1cc8-40fd-b04f-adc9a4c4124d",
+              "parentUUID": "8ca03e5b-9c29-4077-80eb-00d8348c5ea9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Usando datos json para login",
+              "fullTitle": "Usando fixtures Usando datos json para login",
+              "timedOut": null,
+              "duration": 5627,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('usuarios.json').then(datos => {\n  // Utiliza los datos del fixture para el login\n  const usuario = datos[1]; // Accede al segundo objeto del array\n  cy.get('#email').type(usuario.nombre); // Ingresa el nombre de usuario desde el fixture\n  cy.get('#password').type(usuario.password); // Ingresa la contraseña desde el fixture\n  cy.get('button[type=\"submit\"]').click(); // Haz clic en el botón de inicio de sesión\n});",
+              "err": {},
+              "uuid": "f0b21a77-74ab-4bea-9130-c57f67c6cac6",
+              "parentUUID": "8ca03e5b-9c29-4077-80eb-00d8348c5ea9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1b266072-1cc8-40fd-b04f-adc9a4c4124d",
+            "f0b21a77-74ab-4bea-9130-c57f67c6cac6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13720,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "8.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
